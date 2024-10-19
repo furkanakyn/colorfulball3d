@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
         if(Input.touchCount > 0)
         {
             touch = Input.GetTouch(0);
+
             if(touch.phase == TouchPhase.Began)
             {
                 rb.velocity = new Vector3(touch.deltaPosition.x * speedModifier * Time.deltaTime,
